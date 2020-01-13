@@ -74,6 +74,11 @@ img{
 
 }
 
+.section-heading a{
+    font-size: 2rem;
+    color: rgb(214, 57, 36);
+}
+
 .section-heading h1::before,
 .section-heading h1::after{
     content: '';
@@ -459,6 +464,29 @@ li{
     color: lightblue;
 }
 
+/* Start Art */
+.my-art{
+    margin-top: 10rem;
+    display: grid;
+    /* grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr)); */
+    grid-template-columns: repeat(auto-fit, minmax(50rem, 2fr));
+    grid-gap: 10rem;
+    text-align: center;
+}
+
+.art{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    border: lightslategray;
+    border-style: groove;
+    /* border-color: lightslategray; */
+}
+
+
+
 /*Start contact*/
 .contact{
     /* background-color: black; */
@@ -495,7 +523,7 @@ input[type="submit"]{
 
 input[type="submit"]:hover{
     color: yellow;
-    background-color: brown;
+    background-color:  rgb(214, 57, 36);;
 }
 
 /*Start footer*/
@@ -559,26 +587,3 @@ input[type="submit"]:hover{
 /*End media queries*/
 
 /* Start graph */
-.percentage {
-    background: repeating-linear-gradient(
-      to right,
-      white,
-      white 1px,
-      white 1px,
-      white 5%
-    );
-  }
-
-.percentage:after {
-    content: "";
-    display: block;
-    background-color: white;
-  }
-
-  .percentage-20:after {
-    width: 20%;
-  }
-
-  .percentage-30:after {
-    width: 30%;
-  }
