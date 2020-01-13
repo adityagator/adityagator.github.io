@@ -7,7 +7,7 @@
 
 html{
     font-size: 10px;
-    font-family: 'Raleway';
+    font-family: "Nanum Gothic";
     color: #eee;
 }
 
@@ -16,6 +16,20 @@ body{
     height: 100%;
     background: url("img/Contour.png") no-repeat center fixed;
     background-size: cover;
+    font-family: 'Nanum Gothic';
+    /* opacity: .75; */
+    /* font-size: 5rem; */
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* width: 100%; */
+    /* text-align: center;
+    z-index: 1;
+    font-size: 5rem;
+    -webkit-text-fill-color: lightblue;
+    padding: 1rem;
+    -webkit-font-smoothing: antialiased;  */
 }
 
 section{
@@ -145,7 +159,7 @@ li{
 .menu-toggler{
     position: absolute;
     top: 5rem;
-    right: 5rem;
+    left: 5rem;
     width: 5rem;
     height: 4rem;
     display: flex;
@@ -161,7 +175,7 @@ li{
 }
 
 .bar{
-    background: linear-gradient(to right, yellow, pink);
+    background: linear-gradient(to right, rgb(214, 57, 36), pink);
     width: 100%;
     height: 4px;
     border-radius: .8rem;
@@ -190,7 +204,7 @@ li{
     transform: rotate(-450deg) translateX(-.8rem);
 }
 
-.landing-text{
+ .text{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -198,35 +212,48 @@ li{
     width: 100%;
     text-align: center;
     z-index: 1;
-}
+    font-size: 5rem;
+    /* -webkit-text-fill-color: lightblue; */
+    padding: 1rem;
+    -webkit-font-smoothing: antialiased;
+} 
 
-.landing-text h1{
+/* .landing-text h1{
     font-size: 5rem;
     -webkit-text-fill-color: lightblue;
     padding: 1rem;
+    -webkit-font-smoothing: antialiased;
+} */
+
+.highlight{
+    color: rgb(214, 57, 36);
+    opacity: 1;
 }
 
-.landing-text h6{
+/* .landing-text h6{
     font-size: 2rem;
-}
+} */
 
 /*Start about*/
 .about_me .container{
     display: flex;
     align-items: center;
     justify-content: center;
+    background: url("img/stare3.jpg") no-repeat center fixed; 
+    background-size: 100% 100%;
+    /* background-image: "img/SA.jpg"; */
 }
 
 .about-heading{
     text-align: center;
     text-transform: uppercase;
     line-height: 0;
-    margin-bottom: 6rem;
+    margin-bottom: 10rem;
 }
 
 .about-heading h1{
     font-size: 10rem;
-    opacity: 0.3;
+    /* opacity: 0.3; */
 }
 
 .about-heading h6{
@@ -243,6 +270,11 @@ li{
     flex: 1;
 }
 
+.about_me_text{
+    opacity: 1;
+    font-size: 2rem;
+}
+
 .social-media{
     margin-top: 5rem;
 }
@@ -250,6 +282,10 @@ li{
 .social-media i{
     font-size: 5rem;
     transition: color 650ms;
+}
+
+.social-media i:hover{
+    opacity: 0.6;
 }
 /*End about*/
 
