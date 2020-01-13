@@ -360,7 +360,7 @@ li{
     margin-bottom: 0;
 }
 .profile-img{
-    width: 50rem;
+    width: 10rem;
     flex: 1;
 }
 
@@ -372,7 +372,7 @@ li{
     font-size: 1.5rem;
     text-transform: uppercase;
     font-weight: 300;
-    opacity: 0.3;
+    opacity: 0.6;
 }
 
 .portfolio-description h1{
@@ -386,12 +386,12 @@ li{
     margin-top: 2.5rem;
     font-size: 1.5rem;
     text-transform: uppercase;
-    color: yellow;
+    color: lightcyan;
     transition: 650ms;
 }
 
 .portfolio-description .cta:hover{
-    color: blue;
+    color: rgb(214, 57, 36);
 }
 /*End services*/
 
@@ -413,7 +413,7 @@ li{
     text-transform: upeprcase;
     font-weight: 300;
     margin-bottom: 1rem;
-    opacity: .3;
+    opacity: .5;
 }
 
 .timeline .date{
@@ -453,6 +453,10 @@ li{
     height: 1.5rem;
     width: 1.5rem;
     background-color: gray;
+}
+
+.timeline a{
+    color: lightblue;
 }
 
 /*Start contact*/
