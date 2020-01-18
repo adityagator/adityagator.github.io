@@ -644,7 +644,8 @@ input[type="submit"]:hover{
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        left: -2.5rem;
+        left: -3.5rem;
+        /* top: -2.5rem; */
         background: whitesmoke;
     }
 
