@@ -622,7 +622,8 @@ input[type="submit"]:hover{
 
 @media screen and (max-width: 600px){
     body{
-        background: url("img/Contour.png") no-repeat center fixed;
+        background: whitesmoke;
+        color: black;
     }
 
     .menu-toggler{
@@ -635,16 +636,26 @@ input[type="submit"]:hover{
     }
 
     .nav-link{
-        font-size: 3.5rem;
+        font-size: 3rem;
     }
 
     .top-nav{
         margin: 0 0;
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        left: -2.5rem;
+        background: whitesmoke;
     }
 
     .nav-list{
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nav-link{
+        color: black;
     }
 
     .about_me .container{
@@ -652,7 +663,7 @@ input[type="submit"]:hover{
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        background: black;
+        background: whitesmoke;
     }
 
     .profile-img{
@@ -692,11 +703,11 @@ input[type="submit"]:hover{
     .my-art{
         margin-top: 10rem;
         display: grid;
-        /* grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr)); */
         grid-template-columns: repeat(auto-fit, minmax(25rem, 2fr));
         grid-gap: 10rem;
         text-align: center;
         border: none;
+        width: 100%;
     }
     
     .art{
@@ -707,11 +718,6 @@ input[type="submit"]:hover{
         padding: 2rem;
         border: lightslategray;
         border-style: groove;
-        /* border-color: lightslategray; */
-    }
-
-    .my-art{
-        width: 100%;
     }
 
     .art .container{
