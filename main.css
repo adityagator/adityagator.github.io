@@ -151,12 +151,13 @@ li{
 .menu-toggler{
     position: absolute;
     top: 5rem;
-    left: 5rem;
+    right: 5rem;
     width: 5rem;
     height: 4rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    /* justify-content: center; */
     cursor: pointer;
     z-index: 150;
     transition: transform 650ms ease-out;
