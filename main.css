@@ -211,21 +211,10 @@ li{
     -webkit-font-smoothing: antialiased;
 } 
 
-/* .landing-text h1{
-    font-size: 5rem;
-    -webkit-text-fill-color: lightblue;
-    padding: 1rem;
-    -webkit-font-smoothing: antialiased;
-} */
-
 .highlight{
     color: rgb(214, 57, 36);
     opacity: 1;
 }
-
-/* .landing-text h6{
-    font-size: 2rem;
-} */
 
 /*Start about*/
 .about_me .container{
@@ -234,7 +223,6 @@ li{
     justify-content: center;
     background: url("img/stare3.jpg") no-repeat center fixed; 
     background-size: 100% 100%;
-    /* background-image: "img/SA.jpg"; */
 }
 
 .about-heading{
@@ -582,14 +570,6 @@ input[type="submit"]:hover{
         font-family: 'Nanum Gothic';
     }
 
-    /* .landing-text h1{
-        font-size: 15rem;
-    }
-
-    .landing-text h6{
-        font-size: 1.7rem;
-    } */
-
     .nav-list{
         flex-direction: column;
     }
@@ -641,25 +621,38 @@ input[type="submit"]:hover{
 }
 
 @media screen and (max-width: 600px){
+    body{
+        background: black;
+    }
+
     .menu-toggler{
         top: 2rem;
         right: 2rem;
     }
 
-    /* .landing-text h1{
-        font-size: 8rem;
+    li{
+        margin: 2rem 0;
     }
-
-    .landing-text h6{
-
-    } */
 
     .nav-link{
         font-size: 3.5rem;
     }
 
-    .about .container{
+    .top-nav{
+        margin: 0 0;
         flex-direction: column;
+    }
+
+    .nav-list{
+        flex-direction: column;
+    }
+
+    .about_me .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background: black;
     }
 
     .profile-img{
@@ -697,11 +690,28 @@ input[type="submit"]:hover{
     }
 
     .my-art{
-        width: 100%;
+        margin-top: 10rem;
+        display: grid;
+        /* grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr)); */
+        grid-template-columns: repeat(auto-fit, minmax(25rem, 2fr));
+        grid-gap: 10rem;
+        text-align: center;
+        border: none;
+    }
+    
+    .art{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+        border: lightslategray;
+        border-style: groove;
+        /* border-color: lightslategray; */
     }
 
-    .art{
-        flex-direction: column;
+    .my-art{
+        width: 100%;
     }
 
     .art .container{
@@ -713,5 +723,3 @@ input[type="submit"]:hover{
     }
 
 }
-
-/* Start graph */
